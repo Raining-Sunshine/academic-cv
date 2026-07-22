@@ -84,6 +84,10 @@ main > section { padding: 82px 0; border-bottom: 1px solid var(--line); scroll-m
 footer { padding: 36px 0 52px; display: flex; justify-content: space-between; gap: 20px; color: var(--muted); font-size: 0.75rem; }
 footer p { margin: 0; }
 
+@media (min-width: 1341px) {
+  main { margin-left: calc(290px + (100vw - 290px - 1050px) / 2); }
+}
+
 @media (max-width: 900px) {
   .sidebar { position: relative; width: 100%; min-height: auto; padding: 26px 24px; border-right: 0; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 1fr auto; gap: 20px; align-items: end; }
   .identity { border-bottom: 0; padding-bottom: 0; }
